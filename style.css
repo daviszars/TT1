@@ -1,0 +1,380 @@
+@font-face { font-family: Tesla; src: url('tesla.ttf'); } 
+@font-face { font-family: Tesla-; font-weight: bold; src: url('tesla.ttf');}
+body{
+    background: url(pics/background2.png) fixed;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+html {
+overflow-x: hidden
+}
+/*****************************************************/
+li a{
+    display: block;
+    color: #A0A0A0;
+    text-align: center;
+    padding: 8px 18px;
+    text-decoration: none;
+    float: right;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 30px;
+    right: 40px;
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+}
+li a:hover {
+    color: #C0C0C0;
+}
+/*****************************************************/
+#box, #box1, #box2, #box3, #box4{
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    background: rgba(180,180,180,0.85);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 25px;
+    border-radius: 7px;
+    display: block;
+}
+/*****************************************************/
+img.main-car{
+    width:100%;
+    height:100vh;
+}
+h3.main-centered{
+    position: absolute;
+    top: 25%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    color: #700000;
+    font-size: 50pt;
+    letter-spacing: 40px;
+    font-family: Tesla;
+}
+div{
+    color: #0a0a0a;
+    text-align: justify;
+    font-family: "PT Sans", Helvetica;
+}
+div.centered-content{
+    width: 85%;
+    min-width: 534px;
+    margin: auto;
+    text-align: center;
+    margin-top: 0px;
+}
+div p{
+    width: auto;
+    margin: 10pt;
+    font-size: 18px;
+}
+h1{
+    font-size: 28px;
+    color: #700000;
+    width: auto;
+    margin-bottom: 15px;
+    font-family: bold;
+}
+img.tesla-logo{
+    width: 20%;
+    height: 20%;
+    float: right;
+}
+img.elon{
+    width: 18%;
+    height: 18%;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+div.thumbnail{
+    background: rgba(200,200,200,0);
+    border: 0px;
+    width: 70%;
+    height: 70%;
+}
+/*****************************************************/
+.arrow
+{
+    position: absolute;
+    bottom: 0rem;
+    left: 50%;
+    margin-left:-20px;
+    width: 40px;
+    height: 40px;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yOTMuNzUxLDQ1NS44NjhjLTIwLjE4MSwyMC4xNzktNTMuMTY1LDE5LjkxMy03My42NzMtMC41OTVsMCwwYy0yMC41MDgtMjAuNTA4LTIwLjc3My01My40OTMtMC41OTQtNzMuNjcyICBsMTg5Ljk5OS0xOTBjMjAuMTc4LTIwLjE3OCw1My4xNjQtMTkuOTEzLDczLjY3MiwwLjU5NWwwLDBjMjAuNTA4LDIwLjUwOSwyMC43NzIsNTMuNDkyLDAuNTk1LDczLjY3MUwyOTMuNzUxLDQ1NS44Njh6Ii8+DQo8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMjIwLjI0OSw0NTUuODY4YzIwLjE4LDIwLjE3OSw1My4xNjQsMTkuOTEzLDczLjY3Mi0wLjU5NWwwLDBjMjAuNTA5LTIwLjUwOCwyMC43NzQtNTMuNDkzLDAuNTk2LTczLjY3MiAgbC0xOTAtMTkwYy0yMC4xNzgtMjAuMTc4LTUzLjE2NC0xOS45MTMtNzMuNjcxLDAuNTk1bDAsMGMtMjAuNTA4LDIwLjUwOS0yMC43NzIsNTMuNDkyLTAuNTk1LDczLjY3MUwyMjAuMjQ5LDQ1NS44Njh6Ii8+DQo8L3N2Zz4=);
+    background-size: contain;
+}
+.bounce {
+    animation: bounce 2s infinite;
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+/*****************************************************/
+.list{ 
+    width:320px; 
+}
+.list ol{ 
+    font-style:italic; 
+    font-family:Georgia, Times, serif; 
+    font-size:24px; 
+    color:black;  
+}
+.list ol li{
+
+}
+.list ol li p{ 
+    padding:8px; 
+    font-style:normal; 
+    font-family:Arial; 
+    font-size:15px; 
+    color:black; 
+    border-left: 1px solid black; 
+}
+.list ol li p em{ 
+    display:block; 
+    font-size: 20px;
+}
+div#box3{
+    display: table;
+}
+div#box4{
+    display: table;
+}
+h2{
+    font-size: 22px;
+    color: #700000;
+    font-style: italic;
+}
+img.model{
+    width: 33.3%;
+}
+li.listerino{
+    height: 66px;
+}
+/*****************************************************/
+div#logo-desktop{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 70px;
+    height: 70px;
+}
+img#logo-desktop{
+    width: 70px;
+    height: 70px;
+}
+/*****************************************************/
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+/*  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;*/
+  background: rgba(180,180,180,0.9);
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background: rgba(80,80,80,0.8);
+  margin: auto;
+  padding: 0;
+  width: 100vh;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*****************************************************/
+footer {
+    text-align: center;
+    padding: 5px;
+    background: rgba(180,180,180,0.85);
+    color: lightgrey;
+    height: 90px;
+}
+p.copyright{
+    text-align: left;
+}
+/*****************************************************/
+p.collapsible,p.collapsed {
+  cursor: pointer;
+}
+
+.collapsed {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/*****************************************************/
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  width: 100%;
+  border-radius: 5px;
+  background: rgba(180,180,180,0);
+  padding: 20px;
+  color: darkgrey;
+}
+
